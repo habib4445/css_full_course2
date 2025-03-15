@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documen</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+.grid-container{
+    display: grid;
+    grid-template-areas: 'header header header header header header' 'menu main main main main right' 'footer footer footer footer footer footer';
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+}
+.grid-container > div {
+    padding: 10px;
+    font-size: 16px;
+}
+.item1{
+    grid-area: header;
+    background-color: purple;
+    text-align: center;
+    color: white;
+}
+.item1 > h1{
+    font-size: 40px;
+}
+.item2{
+    grid-area:menu;
+}
+.item2 ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.item2 li{
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+}
+.item2 li:hover{
+    background-color: #0099cc;   
+}
+.item3{
+    grid-area: main;
+}
+.item3 > h1{
+    font-size: 30px;
+    margin-bottom: 7px;
+
+}
+.item3 > p{
+    margin-bottom: 7px;
+}
+.item4{
+    grid-area: right;
+    border: 2px solid #0099cc ;
+    background-color: #fff;
+    padding: 15px;
+    color: #000000;
+}
+.item4 > h2{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.item4 li{
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.item5{
+    grid-area: footer;
+    background-color:#0099cc;
+    color: #ffffff;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1"><h1>Chaina</h1></div>
+        <div class="item2">
+            <ul>
+                <li>The Flight</li>
+                <li>The City</li>
+                <li>The Island</li>
+                <li>The Food</li>
+            </ul>
+        </div>
+        <div class="item3">
+            <h1>The City</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, magnam ducimus voluptatem amet aspernatur ullam quo perspiciatis harum cum error saepe ipsa doloremque facere itaque sunt fugiat qui eaque aperiam!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quidem ullam dignissimos rem corporis provident, veritatis, aliquid nostrum omnis praesentium accusantium reprehenderit eveniet laudantium ea voluptates iusto. Libero, soluta sapiente.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nam porro nihil fugiat saepe aperiam repellat exercitationem ipsum sed quisquam, quod dignissimos ipsam dolorem molestias at laboriosam voluptate cupiditate cumque.</p>
+        </div>
+<div class="item4">
+    <h2>Facts</h2>
+    <ul>
+        <li>Chaina is the biggest country in the world</li>
+        <li>Create is a biggest island in the world</li>
+    </ul>
+</div>
+<div class="item5">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus nihil, atque illum consequatur sapiente nam explicabo numquam at eius magnam inventore rerum dolor magni, incidunt earum ratione quasi beatae. Voluptatibus?</p>
+</div>
+
+    </div>
+</body>
+</html>
